@@ -1,15 +1,17 @@
-const express = require("express");
-const morgan = require("morgan");
+// Require modules here
+const express = require('express');
+const coursesRouter = require('./routes/coursesRouter');
+const morgan = require('morgan');
 
 const app = express();
 
-app.use(morgan("dev"));
+// Add to the middleware stack
 
-app.use("/", (req, res) => {
-  res.status(200).json({
-    status: "Sucess",
-    message: "Hello",
-  });
-});
+app.use(morgan('dev'));
+app.use(express.json());
+
+// Route middlewares
+
+app.use('/', coursesRouter);
 
 module.exports = app;
