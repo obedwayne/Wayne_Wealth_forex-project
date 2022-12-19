@@ -1,5 +1,7 @@
 # Wayne_wealth_forex-project
 
+- SERVER
+
 Developers
 
 - Clement Owireku-Bogyah
