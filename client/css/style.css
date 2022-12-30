@@ -61,3 +61,93 @@ h3{
 h4{
     font-size: 1.3rem;
 }
+
+a {
+    color: var(--color-white)
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.logo {
+    width: 12%;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary {
+    color: var(--color-white);
+    background: var(--color-danger);
+}
+
+
+/* ================== NAVBAR =====================*/
+nav {
+    background: var(--color-primary);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+}
+
+.nav__menu:hover {
+    color: var(--color-bg2);
+}
+
+header {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header__left p {
+    margin: 1rem 0 2 4rem;
+}
+
