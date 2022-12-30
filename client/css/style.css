@@ -11,9 +11,10 @@
 :root{
     --color-primary: rgb(0, 3, 8);
     --color-white: rgb(255, 255, 255);
-    --color-bg: rgb(4, 28, 39);
-    --color-bg1: rgba(0, 0, 0, 0.445);
+    --color-bg: rgb(4, 16, 20);
+    --color-bg1: rgba(6, 24, 46, 0.694);
     --color-bg2: rgb(255, 196, 0);
+    --color-btn: linear-gradient(135deg, rgb(255, 177, 8) 0%, rgb(8, 0, 255) 100%);
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -78,9 +79,10 @@ img {
 
 .btn {
     display: inline-block;
-    background: var(--color-white);
+    background: var(--color-btn);
     padding: 1rem 2rem;
     border: 1px solid transparent;
+    border-radius: 2000px;
     font-weight: 500;
 }
 
@@ -88,11 +90,12 @@ img {
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
+    transition: 2s;
 }
 
 .btn-primary {
     color: var(--color-white);
-    background: var(--color-danger);
+    border-color: var(--color-bg);
 }
 
 
@@ -103,6 +106,8 @@ nav {
     height: 5rem;
     position: fixed;
     top: 0;
+    border-bottom: 1px solid rgb(31, 31, 31);
+    box-shadow: 16px 20px 20px #0000008c;
     z-index: 11;
 }
 
@@ -112,6 +117,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 
 nav button{
     display: none;
@@ -151,3 +157,32 @@ header {
     margin: 1rem 0 2 4rem;
 }
 
+/* =============== CATERGORIES =================== */
+
+.categories {
+    background: var(--color-bg1);
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+
+.categories__legt p{
+    margin: 1rem 0 3rem;
+}
+.categories__right {
+    display: grid;
+    grid-template-columns: repeat 3, 1fr;
+    gap: 1.2rem;
+}
+
+.categories{
+    background: var(--color-bg1)
+}
