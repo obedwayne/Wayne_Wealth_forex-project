@@ -12,9 +12,10 @@
     --color-primary: rgb(0, 3, 8);
     --color-white: rgb(255, 255, 255);
     --color-bg: rgb(4, 16, 20);
-    --color-bg1: rgba(6, 24, 46, 0.694);
-    --color-bg2: rgb(255, 196, 0);
-    --color-btn: linear-gradient(135deg, rgb(255, 177, 8) 0%, rgb(8, 0, 255) 100%);
+    --color-bg1: rgb(12, 43, 80);
+    --color-bg2: rgb(7, 20, 36);
+    --color-bg3: rgb(255, 196, 0);
+    --color-btn: linear-gradient(135deg, rgb(255, 177, 8) 0%, rgb(0, 6, 42) 100%);
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -74,15 +75,19 @@ img {
 }
 
 .logo {
-    width: 12%;
+    display: fixed;
+    width: 90pt;
+    height: fit-content;
+    object-fit: cover;
+
 }
 
 .btn {
     display: inline-block;
-    background: var(--color-btn);
+    background: var(--color-white);
     padding: 1rem 2rem;
     border: 1px solid transparent;
-    border-radius: 2000px;
+    border-radius: 100px;
     font-weight: 500;
 }
 
@@ -95,13 +100,13 @@ img {
 
 .btn-primary {
     color: var(--color-white);
-    border-color: var(--color-bg);
+    background: var(--color-btn);
 }
 
 
 /* ================== NAVBAR =====================*/
 nav {
-    background: var(--color-primary);
+    background: transparent;
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -118,7 +123,6 @@ nav {
     align-items: center;
 }
 
-
 nav button{
     display: none;
 }
@@ -131,9 +135,10 @@ nav button{
 
 .nav__menu a {
     font-size: 0.9rem;
+    transition: var(--transition) ;
 }
 
-.nav__menu:hover {
+.nav__menu a:hover {
     color: var(--color-bg2);
 }
 
@@ -160,7 +165,7 @@ header {
 /* =============== CATERGORIES =================== */
 
 .categories {
-    background: var(--color-bg1);
+    background: var(--color-bg2);
 }
 
 .categories h1 {
@@ -171,10 +176,13 @@ header {
 .categories__container {
     display: grid;
     grid-template-columns: 40% 60%;
-    gap: 4rem;
+    /* gap: 4rem; */
 }
 
-.categories__legt p{
+.categories__left {
+    margin-right: 2rem;
+}
+.categories__left p{
     margin: 1rem 0 3rem;
 }
 .categories__right {
@@ -183,6 +191,16 @@ header {
     gap: 1.2rem;
 }
 
-.categories{
-    background: var(--color-bg1)
+.category{
+    background: var(--color-bg1);
+    padding: 2rem;
+    border-radius: 2rem;
+    transform: scale(0.9);
+    transition: var(--transition);
 }
+
+.category:hover {
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.408);
+    transform: scale(1);
+}
+
