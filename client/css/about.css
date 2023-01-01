@@ -1,0 +1,182 @@
+
+
+header {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 80vh;
+    margin-bottom: 5rem;
+    background: var(--color-btn);
+    color: var(--color-white);
+}
+
+.head {
+    margin-top: 5rem;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration:solid underline;
+}
+
+.head h1{
+    font-size: 3rem;
+    margin: 2rem auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration:solid underline;
+}
+
+.about__container {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.vision {
+    /* display: ; */
+    height: 30vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+.mission {
+    height: 30vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.goal {
+    height: 30vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+
+}
+
+.vision h1{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.mission h1{
+    /* margin: 2rem auto; */
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.goal h1{
+    /* margin: 2rem auto; */
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.about {
+    transform: scale(0.9);
+    transition: 1s;
+    cursor: default;
+
+}
+.about:hover {
+    box-shadow: 0 3rem 6rem rgb(0,0,0);
+    background:  rgba(137, 95, 4, 0.797);
+    transform: scale(1);
+
+}
+
+
+/* ============== TABLET ============== */
+@media screen and (max-width: 1024px) {
+
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    header {
+        position: relative;
+        top: 5rem;
+        overflow: hidden;
+        height: 80vh;
+        margin-bottom: 5rem;
+        background: var(--color-btn);
+        color: var(--color-white);
+    }
+
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .vision {
+        /* display: ; */
+        height: 45vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem 4rem 1rem 1rem;
+        border-radius: 10px;
+    }
+    .mission {
+        height: 45vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .goal {
+        height: 45vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+}
+
+/* ============== MOBILE DEVICES ============= */
+@media screen and (max-width: 680px) {
+
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    .about__container {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        position: relative;
+        top: 5rem;
+        overflow: hidden;
+        height: 85vh;
+        margin-bottom: 5rem;
+        background: var(--color-btn);
+        color: var(--color-white);
+    }
+
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .vision {
+        /* display: ; */
+        height: 20vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem 4rem 1rem 1rem;
+        border-radius: 10px;
+    }
+    .mission {
+        height: 15vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .goal {
+        height: 15vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+}
