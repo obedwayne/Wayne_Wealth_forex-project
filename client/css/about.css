@@ -33,48 +33,25 @@ header {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.vision {
+.about {
     /* display: ; */
-    height: 30vh;
-    background: rgba(0, 0, 0, 0.5);
+    height: auto;
+    background: rgba(0, 0, 0, 0.174);
     padding: 1rem;
     border-radius: 10px;
-
 }
 
-.mission {
-    height: 30vh;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 10px;
-
-}
-.goal {
-    height: 30vh;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 10px;
-
-
-}
-
-.vision h1{
+.about h1{
     display: block;
     position: relative;
     text-align: center;
 }
-.mission h1{
-    /* margin: 2rem auto; */
+.about p{
     display: block;
     position: relative;
-    text-align: center;
+    justify-content: center;
 }
-.goal h1{
-    /* margin: 2rem auto; */
-    display: block;
-    position: relative;
-    text-align: center;
-}
+
 
 .about {
     transform: scale(0.9);
@@ -84,7 +61,7 @@ header {
 }
 .about:hover {
     box-shadow: 0 3rem 6rem rgb(0,0,0);
-    background:  rgba(137, 95, 4, 0.797);
+    background:  rgba(255, 255, 255, 0.797);
     transform: scale(1);
 
 }
@@ -94,7 +71,7 @@ header {
 @media screen and (max-width: 1024px) {
 
     .container{
-        width: var(--container-width-sm);
+        width: var(--container-width-md);
     }
 
     header {
@@ -112,22 +89,9 @@ header {
         font-size: 2rem;
     }
 
-    .vision {
-        /* display: ; */
-        height: 45vh;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 1rem 4rem 1rem 1rem;
-        border-radius: 10px;
-    }
-    .mission {
-        height: 45vh;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 1rem;
-        border-radius: 10px;
-    }
-    .goal {
-        height: 45vh;
-        background: rgba(0, 0, 0, 0.5);
+    .about {
+        height: auto;
+        background: rgba(0, 0, 0, 0.174);
         padding: 1rem;
         border-radius: 10px;
     }
@@ -159,23 +123,10 @@ header {
     h1{
         font-size: 2rem;
     }
-
-    .vision {
+    about {
         /* display: ; */
-        height: 20vh;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 1rem 4rem 1rem 1rem;
-        border-radius: 10px;
-    }
-    .mission {
-        height: 15vh;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 1rem;
-        border-radius: 10px;
-    }
-    .goal {
-        height: 15vh;
-        background: rgba(0, 0, 0, 0.5);
+        height: auto;
+        background: rgba(0, 0, 0, 0.174);
         padding: 1rem;
         border-radius: 10px;
     }
