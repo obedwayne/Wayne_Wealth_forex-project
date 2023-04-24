@@ -36,4 +36,4 @@ Portal will support two major roles: Student & Admin. Admins can be subdivided i
 * Student Management
 * Online Tests/Assessments
 * Blogging & Content Management
-* Frontend Website
+* Frontend Websites
